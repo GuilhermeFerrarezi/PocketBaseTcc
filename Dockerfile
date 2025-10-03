@@ -13,6 +13,6 @@ COPY . .
 EXPOSE 8080
 
 # Comando para rodar o PocketBase
-CMD ["./pocketbase", "serve", "--http=0.0.0.0:8080"]
+CMD ["./pocketbase", "serve", "--http=0.0.0.0:${PORT}"]
 
 RUN chmod +x /app/pocketbase

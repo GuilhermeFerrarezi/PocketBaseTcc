@@ -16,5 +16,5 @@ RUN chmod +x /app/pocketbase
 EXPOSE 8080
 
 # Comando para rodar o PocketBase (usa sh -c para expandir ${PORT})
-CMD sh -c "./pocketbase serve --http=0.0.0.0:8080"
+CMD sh -c "./pocketbase serve"
 
